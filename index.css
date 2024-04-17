@@ -5,8 +5,13 @@ body {
   background-repeat: no-repeat;
 }
 
+@font-face {
+  font-family: 'TUIVEN Trial';
+  src: url('TUIVEN-Trial.ttf');
+}
+
 #pirata-one-regular {
-  font-family: "Tuiven";
+  font-family: "TUIVEN Trial";
   font-weight: 400;
   font-style: normal;
 }
