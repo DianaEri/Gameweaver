@@ -3,6 +3,7 @@ body {
   background: rgb(0,0,0);
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(146,44,64,1) 95%);
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 @font-face {
@@ -23,7 +24,7 @@ body {
 
 .navbar a {
   float: left;
-  padding: 12px;
+  padding: 32px;
   color: white;
   text-decoration: none;
   font-size: 28px;
@@ -48,6 +49,20 @@ h2 {
   color: white;
   font-size: 52px;
   text-transform: uppercase;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
