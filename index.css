@@ -4,6 +4,9 @@ body {
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(76, 0, 17, 1) 95%);
   background-repeat: no-repeat;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
@@ -19,7 +22,6 @@ body {
 
 .navbar {
   width: 100%;
-  overflow: auto;
 }
 
 .navbar a {
@@ -51,7 +53,38 @@ h1 {
   text-transform: uppercase;
 }
 
+.opening {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  padding-left: 20em;
+}
+
+#openingImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("man\ playing.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.frame {
+  height: 30em;
+}
+
+.openingText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 8%;
+}
+
 .section {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 8em;
   display: flex;
   color: white;
   width: 100%;
@@ -78,14 +111,11 @@ h3 {
   background-color: #1F2024;
 }
 
-.section p {
-  width: 30vw;
-}
-
 p {
   color: white;
   letter-spacing: 0.2cap;
   font-size: large;
+  width: 30vw;
 }
 
 #image {
@@ -100,6 +130,53 @@ p {
   justify-content: center;
   flex-direction: column;
   padding-left: 2em;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}
+
+footer p {
+  color: #000;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  display: flex;
+  font-size: 4.5em;
+}
+
+.container {
+  position: relative;
+  width: 2.3em;
+  height: 2.5em;
+  margin: 0em 0.25em;
+}
+
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img {
+  opacity: 0.3;
+}
+
+.container {
+  cursor: pointer;
+}
+
+.container:hover, .container :hover img {
+  opacity: 1;
+  filter: drop-shadow(5px 5px 5px #7f2828);
 }
 
 @media screen and (max-width: 500px) {
