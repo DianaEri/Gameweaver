@@ -5,6 +5,7 @@ body {
   background: radial-gradient(circle, rgba(77,0,17,1) 0%, rgba(0,0,0,1) 97%);
   background-repeat: no-repeat;
   margin: 0;
+  padding: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,11 +23,24 @@ body {
   font-style: normal;
 }
 
-.navbar {
+#navbar {
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  box-shadow: inset 0 140px 140px -8px rgba(0, 0, 0, 0.9);
+}
+
+.navContainer {
   display: flex;
   font-size: 28px;
   gap: 1.5em;
-  margin: 2em 4em 0em 4em;
+  padding: 2em 3em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .navbar-pages a, .navbar-socials a {
@@ -46,12 +60,26 @@ body {
   gap: 0.5em;
 }
 
-.navbar a:hover {
+.navContainer a:hover {
   color: #F1A438;
 }
 
 .active {
   background-color: #000;
+  padding-top: 1.5em;
+  margin-top: -4%;
+}
+
+.active svg {
+  height: 6em;
+}
+
+.active svg:hover {
+  fill: #fce57e;
+}
+
+.active img {
+  height: 6em;
 }
 
 h1 {
@@ -71,6 +99,7 @@ h1 span {
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  margin-top: 6em;
 }
 
 #openingImage {
@@ -141,7 +170,21 @@ h3 {
   background-image: url("socials.png");
 }
 
-p {
+.socials p {
+  color: white;
+  letter-spacing: 0.2cap;
+  font-size: large;
+  width: 30vw;
+}
+
+.opening p {
+  color: white;
+  letter-spacing: 0.2cap;
+  font-size: large;
+  width: 30vw;
+}
+
+.section p {
   color: white;
   letter-spacing: 0.2cap;
   font-size: large;
@@ -180,6 +223,15 @@ footer p {
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+h2 span {
+  font-size: 1.5em;
+  line-height: 80%;
+}
+
+.socials p {
+  margin-top: -5%;
+}
+
 .icons {
   display: flex;
   font-size: 4.5em;
@@ -209,8 +261,50 @@ footer p {
 
 .container:hover, .container :hover img {
   opacity: 1;
-  filter: drop-shadow(3px 3px 3px #760504);
+  filter: drop-shadow(2px 2px 4px #c2770e);
 }
+
+.logo {
+  width: 100%;
+  background-color: #9DA993;
+  padding: 1em 0em;
+}
+
+.footnav {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  padding: 2em 0em;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+.footnav a {
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.footnav span {
+  color: #c7c5ca;
+}
+
+.credits {
+  width: 100%;
+  background-color: #e9e4e0;
+  padding: 1em 0em;
+}
+
+.footbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 500px) {
   .navbar a {

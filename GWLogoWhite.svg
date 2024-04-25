@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/f0f70ce3b8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Document</title>
-    <script src="index.js"></script>
-</head>
-<body>
-    <nav id="navbar">
-        <div class="navContainer">
-            <div class="active">        
-                <a href="#">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.8.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
-	<!-- .st0{clip-path:url(#SVGID_00000139276233257348508010000017426008653764613527_);}
+	.st0{clip-path:url(#SVGID_00000139276233257348508010000017426008653764613527_);}
 	.st1{clip-path:url(#SVGID_00000160878005185106640910000015455165900068013192_);}
 	.st2{clip-path:url(#SVGID_00000053542020687471432520000006299128710772442301_);}
 	.st3{clip-path:url(#SVGID_00000100362325873176744910000010812423002275059072_);}
@@ -27,9 +14,9 @@
 	.st8{clip-path:url(#SVGID_00000086651133244492893990000008078911963211037613_);}
 	.st9{clip-path:url(#SVGID_00000017487778018211606180000015695592177381740945_);}
 	.st10{clip-path:url(#SVGID_00000036221355411379904820000006094476016626221226_);}
-	.st11{clip-path:url(#SVGID_00000116945384791488046740000007602669699602335642_);} -->
+	.st11{clip-path:url(#SVGID_00000116945384791488046740000007602669699602335642_);}
 	.st12{fill:#FFFFFF;}
-	<!-- .st13{clip-path:url(#SVGID_00000059993630477424374060000016377409286928628379_);}
+	.st13{clip-path:url(#SVGID_00000059993630477424374060000016377409286928628379_);}
 	.st14{clip-path:url(#SVGID_00000047027379460423062960000016852202974358764455_);}
 	.st15{clip-path:url(#SVGID_00000144319497111986934970000015322184562006473886_);}
 	.st16{clip-path:url(#SVGID_00000062176128486293055750000009835544830952335014_);}
@@ -92,9 +79,9 @@
 	.st73{clip-path:url(#SVGID_00000125570173666656612000000011727840326192180926_);}
 	.st74{clip-path:url(#SVGID_00000169537002097850826060000014637025136603512248_);}
 	.st75{clip-path:url(#SVGID_00000098184897057654504790000008373387501104589718_);}
-	.st76{clip-path:url(#SVGID_00000036251832669154787770000007496375435931140757_);} -->
+	.st76{clip-path:url(#SVGID_00000036251832669154787770000007496375435931140757_);}
 	.st77{fill:none;stroke:#FFFFFF;stroke-width:24;}
-	<!-- .st78{clip-path:url(#SVGID_00000174582420423532963030000005334749609265050756_);}
+	.st78{clip-path:url(#SVGID_00000174582420423532963030000005334749609265050756_);}
 	.st79{clip-path:url(#SVGID_00000152250459083177286920000016565484473151909767_);}
 	.st80{clip-path:url(#SVGID_00000157267361935774644550000017151850223306766522_);}
 	.st81{clip-path:url(#SVGID_00000074401279705538529160000002375312232339438009_);}
@@ -107,9 +94,9 @@
 	.st88{clip-path:url(#SVGID_00000175283010096718163020000017057121364326826131_);}
 	.st89{clip-path:url(#SVGID_00000039123768211315643720000003441425523421911716_);}
 	.st90{clip-path:url(#SVGID_00000088100757807186768450000000293044342329748136_);}
-	.st91{clip-path:url(#SVGID_00000020395162393482647420000004065442620810714274_);} -->
+	.st91{clip-path:url(#SVGID_00000020395162393482647420000004065442620810714274_);}
 	.st92{fill:none;stroke:#FFFFFF;stroke-width:20;}
-	<!-- .st93{clip-path:url(#SVGID_00000082365703627168704780000011527584068181583239_);}
+	.st93{clip-path:url(#SVGID_00000082365703627168704780000011527584068181583239_);}
 	.st94{clip-path:url(#SVGID_00000091720331519590041310000011801037556041174679_);}
 	.st96{clip-path:url(#SVGID_00000037689065085275096720000017729953171033327545_);}
 	.st97{clip-path:url(#SVGID_00000110457577421598135700000000687335723635785101_);}
@@ -127,8 +114,8 @@
 	.st109{clip-path:url(#SVGID_00000039835248566605664110000013391774743728787335_);}
 	.st110{clip-path:url(#SVGID_00000156561913293837656710000010519586167961555345_);}
 	.st111{clip-path:url(#SVGID_00000049939857091745546320000007594533562780200106_);}
-	.st112{clip-path:url(#SVGID_00000066483116635792858240000016770087169098854801_);} -->
-	<!-- .st113{clip-path:url(#SVGID_00000041977109152153877760000000747352478006366389_);}
+	.st112{clip-path:url(#SVGID_00000066483116635792858240000016770087169098854801_);}
+	.st113{clip-path:url(#SVGID_00000041977109152153877760000000747352478006366389_);}
 	.st114{clip-path:url(#SVGID_00000167391679059103741190000014451061296263357101_);}
 	.st115{clip-path:url(#SVGID_00000106830466904032533370000011620282350279500693_);}
 	.st116{clip-path:url(#SVGID_00000003826502508910188530000007137921776603931557_);}
@@ -154,7 +141,7 @@
 	.st136{clip-path:url(#SVGID_00000134949504110921716160000007496265111889019279_);}
 	.st137{clip-path:url(#SVGID_00000018222617123361518400000000206486739942774718_);}
 	.st138{clip-path:url(#SVGID_00000054987641789270335570000000431728533119396751_);}
-	.st139{clip-path:url(#SVGID_00000169556593641079135230000002816811625787863989_);} -->
+	.st139{clip-path:url(#SVGID_00000169556593641079135230000002816811625787863989_);}
 	.st141{fill:none;stroke:#FFFFFF;stroke-width:16.8;}
 </style>
 <g>
@@ -2364,103 +2351,3 @@
 	</g>
 </g>
 </svg>
-                </a>
-            </div>
-            <div class="navbar-pages">
-                <a href="#" class="split" id="pirata-one-regular"><i class="fa-solid fa-gamepad"></i></a>
-                <a href="#" class="split" id="pirata-one-regular">About</a>
-                <a href="#" class="split" id="pirata-one-regular">Games</a>
-                <a href="#" class="split" id="pirata-one-regular">Contact</a>
-            </div>
-            <div class="navbar-socials">
-                <a href="#" class="split"><i class="fa-brands fa-steam"></i></a>
-                <a href="#" class="split"><i class="fa-brands fa-discord"></i></a>
-                <a href="#" class="split"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#" class="split"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-    </nav>
-    <div class="opening">
-    <div id="openingImage"><img class="frame" src="Collage.png" alt="Collage of ingame images"></div>
-    <div class="openingText">
-        <div>
-            <h1 id="pirata-one-regular">Welcome<br><span>We are<br>GameWeaver</span></h1>
-            <p>
-                Game Weaver is a small game development studio from Portugal, founded in 2021 by an industry veteran. 
-                We’re currently working on our first game, which will be an open world RPG with crafting.
-            </p>
-            <button class="button">Read More</button>
-        </div>
-    </div>
-    </div>
-    <div class="section">
-            <div id="image"><img src="Desert trip.png" alt="Castle"></div>
-            <div id="text">
-            <h2 id="pirata-one-regular">Our games</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Vitae suscipit tellus mauris a diam maecenas sed enim. 
-                Vitae auctor eu augue ut lectus arcu. Sit amet tellus cras adipiscing enim. Natoque penatibus et magnis dis. 
-                Purus ut faucibus pulvinar elementum integer enim. At tellus at urna condimentum mattis. Leo vel fringilla est ullamcorper eget 
-                nulla facilisi etiam dignissim. Ultrices sagittis orci a scelerisque. Nulla posuere sollicitudin aliquam ultrices sagittis orci 
-                a scelerisque purus. Mi eget mauris pharetra et ultrices neque.
-            </p>
-            </div>
-    </div>
-    <div class="socials">
-        <div>
-            <h2 id="pirata-one-regular">Social<br><span>Connect with us</span></h2>
-            <p>
-                Drop by and say hi, we’d love to hear from you! 
-                Connect via our pages to stay up to date with what we’re doing!
-            </p>
-        </div>
-        <div class="icons">
-            <div class="container">
-                <a>
-                    <img src="Grunge circle white.png" alt="Snow" style="width:100%;">
-                    <i id="centered" class="fa-brands fa-steam"></i>
-                </a>
-            </div>
-            <div class="container">
-                <a>
-                    <img src="Grunge circle white.png" alt="Snow" style="width:100%;">
-                    <i id="centered" class="fa-brands fa-discord"></i>
-                </a>
-            </div>
-            <div class="container">
-                <a>
-                    <img src="Grunge circle white.png" alt="Snow" style="width:100%;">
-                    <i id="centered" class="fa-brands fa-x-twitter"></i>
-                </a>
-            </div>
-            <div class="container">
-                <a>
-                    <img src="Grunge circle white.png" alt="Snow" style="width:100%;">
-                    <i id="centered" class="fa-brands fa-youtube"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footbar">
-            <div class="logo">
-                GW
-            </div>
-            <div class="footnav">
-                <a>About</a>
-                <span>|</span>
-                <a>Games</a>
-                <span>|</span>
-                <a>Contact</a>
-            </div>
-            <div class="credits">
-            <p>© All Rights Reserved GAMEWEAVER 2024 | 
-                Privacy | Site Design by Diana Eriksson & Madelene 
-                Rosengren</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
-
