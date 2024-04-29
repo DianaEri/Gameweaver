@@ -291,12 +291,17 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("controller\ background.png");
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo svg {
   width: 45%;
   height: auto;
   fill: #000;
+  padding: 6%;
 }
 
 .logo svg:hover {
