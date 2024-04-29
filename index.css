@@ -8,6 +8,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  box-shadow: inset 0px -40px 20px 0px rgba(0,0,0,0.9);
 }
 
 @font-face {
@@ -171,6 +172,9 @@ h3 {
   width: 100%;
   height: 50em;
   background-image: url("drag\ cut.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .socials p {
@@ -267,7 +271,9 @@ h2 span {
 }
 
 .logo {
-  margin-top: -5%;
+  position: absolute;
+  bottom: -16.5%;
+  left: 1.6%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -275,6 +281,7 @@ h2 span {
   width: 100%;
   padding: 1em 0em;
   fill: #000;
+  color: #000;
 }
 
 .logo svg {
