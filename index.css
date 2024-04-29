@@ -167,14 +167,15 @@ h3 {
 }
 
 .socials {
+  position: relative;
   display: flex;
+  flex-direction: column;
   color: white;
   width: 100%;
   height: 50em;
-  background-image: url("drag\ cut.png");
+  background-image: url("s\ dragon.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .socials p {
@@ -226,6 +227,10 @@ footer p {
   align-items: center;
   justify-content: center;
   padding: 10em 0em;
+}
+
+.socialsSection {
+  display: flex;
   gap: 8em;
 }
 
@@ -272,20 +277,25 @@ h2 span {
 
 .logo {
   position: absolute;
-  bottom: -16.5%;
-  left: 1.6%;
+  bottom: -8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1em 0em;
   fill: #000;
   color: #000;
 }
 
+.logoSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo svg {
-  height: 7em;
+  width: 45%;
+  height: auto;
   fill: #000;
 }
 
