@@ -68,6 +68,15 @@ body {
   color: #F1A438;
 }
 
+#home svg:hover {
+  fill: #F1A438;
+}
+
+.container:hover, .container :hover img {
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
+}
+
 .active {
   background-color: #000;
   padding: 1.8em 1em 0.8em 1em;
@@ -272,7 +281,7 @@ h2 span {
 
 .container:hover, .container :hover img {
   opacity: 1;
-  filter: drop-shadow(2px 2px 4px #c2770e);
+  filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
 .logo {
@@ -282,7 +291,7 @@ h2 span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 18%;
   fill: #000;
   color: #000;
 }
@@ -301,11 +310,13 @@ h2 span {
   width: 45%;
   height: auto;
   fill: #000;
-  padding: 6%;
+  padding: 6% 3% 0% 3%;
 }
 
-.logo svg:hover {
+.logo:hover svg, .logo:hover {
   fill: #c2770e;
+  color: #c2770e;
+  cursor: pointer;
 }
 
 .logoBrand {
