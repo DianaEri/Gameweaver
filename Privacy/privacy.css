@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../Media/seamless_mini_b_619d7ee4-d17f-48a2-891b-e32efb65e92c.png");
+    background-size: 40%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: 'TUIVEN Trial';
+    src: url('../Media/TUIVEN-Trial.ttf');
+}
+
+#pirata-one-regular {
+    font-family: "TUIVEN Trial";
+    font-weight: 400;
+    font-style: normal;
+}
+
+#navbar {
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
+}
+  
+.navContainer {
+    display: flex;
+    font-size: 28px;
+    gap: 1.5em;
+    padding: 2em 3em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#home svg {
+    fill: #FFF;
+    height: 1.5em;
+}
+
+.navbar-pages a, .navbar-socials a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navbar-pages {
+    margin-left: auto;
+    display: flex;
+    gap: 1.5em;
+}
+
+.navbar-socials {
+    display: flex;
+    gap: 0.5em;
+}
+
+.navContainer a:hover {
+    color: #F1A438;
+}
+
+#home svg:hover {
+    fill: #F1A438;
+}
+
+.container:hover, .container :hover img {
+    opacity: 1;
+    filter: drop-shadow(2px 2px 4px #F1A438);
+    }
+
+.active {
+    background-color: #000;
+    padding: 1.8em 1em 0.8em 1em;
+    margin-top: -4%;
+}
+
+.active svg {
+    height: 6em;
+    fill: #FFF;
+}
+
+.active svg:hover {
+    fill:#F1A438;
+}
+
+.active img {
+    height: 6em;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+h1 span {
+    font-size: 4.5em;
+    line-height: 80%;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    margin-bottom: 4em;
+}
+
+.opening h1 {
+    margin-bottom: 0.2em;
+}
+
+.openingHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.width {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    gap: 2em;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: #c2770e;
+} 
+
+.opening ul {
+    list-style-image: url('../Media/diamond.svg');
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+.opening ul li {
+    margin: 0.7em 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    color: #fff;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #fff;
+}
+
+h4 {
+    margin-top: 3em;
+    color: #c2770e;
+    font-size: larger;
+}
+
+.socials {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 50em;
+    background-image: url("../Media/Dragon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.socials p {
+    color: white;
+    letter-spacing: 0.2cap;
+    font-size: large;
+    width: 30vw;
+}
+
+.opening p {
+    color: white;
+    letter-spacing: 0.2cap;
+    font-size: large;
+}
+
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2em;
+}
+
+#text p {
+    margin-top: -3%;
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+}
+
+footer p {
+    color: #000;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10em 0em;
+}
+
+.socialsSection {
+    display: flex;
+    gap: 8em;
+}
+
+h2 span {
+    font-size: 1.5em;
+    line-height: 80%;
+}
+
+.socials p {
+    margin-top: -5%;
+}
+
+.icons {
+    display: flex;
+    font-size: 4.5em;
+    gap: 0.5em;
+}
+
+.container {
+    position: relative;
+    width: 2.3em;
+    height: 2.5em;
+    }
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container img {
+    opacity: 0.3;
+}
+
+.container, a, button {
+    cursor: pointer;
+}
+
+.container:hover, .container :hover img {
+    opacity: 1;
+    filter: drop-shadow(2px 2px 4px #F1A438);
+}
+
+.logo {
+    position: absolute;
+    bottom: -15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    fill: #000;
+    color: #000;
+}
+
+.logoSVG {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Media/Controller-background.png");
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo svg {
+    width: 45%;
+    height: auto;
+    fill: #000;
+    padding: 6% 3% 0% 3%;
+}
+
+.logo:hover svg, .logo:hover {
+    fill: #c2770e;
+    color: #c2770e;
+    cursor: pointer;
+}
+
+.logoBrand {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.logoComp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.71em;
+    gap: 2.5em;
+}
+
+.footbar a:hover {
+    color: #c2770e;
+}
+
+.footnav {
+    display: flex;
+    gap: 1em;
+    width: 100%;
+    padding: 6em 0em 2em 0em;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.footnav a {
+    font-family: "TUIVEN Trial";
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    }
+
+.footnav span {
+    color: #c7c5ca;
+}
+
+.credits {
+    width: 100%;
+    background-color: #e9e4e0;
+    padding: 1em 0em;
+}
+
+.credits a {
+    color: #c2770e;
+}
+
+.credits a:hover {
+    text-decoration: none;
+    color: #c2770e;
+}
+
+.footbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}

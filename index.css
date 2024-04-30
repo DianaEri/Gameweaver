@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("Background.png");
+  background-image: url("Media/Background.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0;
@@ -13,7 +13,7 @@ body {
 
 @font-face {
   font-family: 'TUIVEN Trial';
-  src: url('TUIVEN-Trial.ttf');
+  src: url('Media/TUIVEN-Trial.ttf');
 }
 
 #pirata-one-regular {
@@ -193,7 +193,7 @@ h3 {
   color: white;
   width: 100%;
   height: 50em;
-  background-image: url("s\ dragon.png");
+  background-image: url("Media/Dragon.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
@@ -315,7 +315,7 @@ h2 span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("controller\ background.png");
+  background-image: url("Media/Controller-background.png");
   background-size: 52%;
   background-repeat: no-repeat;
   background-position: center;
@@ -376,6 +376,15 @@ h2 span {
   width: 100%;
   background-color: #e9e4e0;
   padding: 1em 0em;
+}
+
+.credits a {
+  color: #c2770e;
+}
+
+.credits a:hover {
+  text-decoration: none;
+  color: #c2770e;
 }
 
 .footbar {
