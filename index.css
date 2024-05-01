@@ -1,14 +1,12 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("Media/Background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url("Media/seamless_mini_b_619d7ee4-d17f-48a2-891b-e32efb65e92c.png");
+  background-size: 40%;
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  box-shadow: inset 0px -60px 50px 0px rgba(0,0,0,0.9);
 }
 
 @font-face {
@@ -112,8 +110,8 @@ h1 span {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   margin-top: 6em;
+  margin-bottom: 2.5em;
 }
 
 #openingImage {
@@ -162,8 +160,7 @@ h1 span {
   padding-bottom: 2%;
   display: flex;
   color: white;
-  background-color: #0B0B10;
-  box-shadow: inset 0px 0px 30px 30px rgba(0,0,0,0.7);
+  background-color: #121212;
 }
 
 .section h2 {
@@ -299,6 +296,12 @@ h2 span {
   filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
   position: absolute;
   bottom: -15%;
@@ -366,6 +369,8 @@ h2 span {
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+  color: #000;
+  text-decoration-line: none;
 }
 
 .footnav span {

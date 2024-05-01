@@ -276,6 +276,12 @@ h2 span {
     filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
+.logoLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .logo {
     position: absolute;
     bottom: -15%;
@@ -343,7 +349,9 @@ h2 span {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    }
+    color: #000;
+    text-decoration-line: none;
+}
 
 .footnav span {
     color: #c7c5ca;
