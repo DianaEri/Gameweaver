@@ -135,11 +135,23 @@ h1 span {
     gap: 2em;
 }
 
+.contactForm {
+    margin-bottom: 3em;
+}
+
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border: 2px solid #FFFe;
+    background-color: #080808;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+input[type=text]::placeholder {
+    color: #FFF;
 }
 
 textarea {
@@ -147,33 +159,40 @@ textarea {
     height: 150px;
     padding: 12px 20px;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid #FFF;
     border-radius: 4px;
-    background-color: #f8f8f8;
+    background-color: #080808;
     resize: none;
     margin: 8px 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
 }
 
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
+    background-color: #F1A438;
     border: none;
-    border-radius: 4px;
+    color: #0B0B10;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    text-transform: uppercase;
+    font-family: "TUIVEN Trial";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    width: max-content;
     cursor: pointer;
     float: right;
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    border: #F1A438 3px solid;
+    background-color: #0B0B10;
+    color: #F1A438;
 }
   
-
-form {
-    color: #FFF;
-}
-
 .divider {
     display: flex;
     align-items: center;
