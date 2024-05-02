@@ -125,15 +125,33 @@ h1 span {
     margin-bottom: 5em;
     gap: 3em;
 }
-
-.rowOne, .rowThree {
+.welcomeText {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
     justify-content: center;
-    width: 60%;
-    gap: 6em;
-    text-align: center;
+    width: 70%;
+}
+
+.rowOne {
+    display: flex;
+    width: 90%;
+    gap: 1.5em;
+    margin: 4em 0em;
+}
+
+.rowOne img {
+    width: 100%;
+}
+
+.rowOne h2 {
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.rowOne h3 {
+    text-align: left;
+    font-size: 7em;
 }
 
 .rowTwo {
@@ -189,8 +207,22 @@ h1 span {
 .headerAbout {
     height: 1.6em;
 }
-  
-  /* Style tab links */
+
+.headerH2 h2 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: row;
+}
+
+.headerH3 h3 {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.05em;
+}
+
+/* Style tab links */
 .tablink {
     background-color: #555;
     color: white;
@@ -373,6 +405,19 @@ footer p {
     align-items: center;
     justify-content: center;
     padding: 10em 0em;
+}
+
+.headerDivider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.7em;
+    letter-spacing: 0em;
+}
+
+.headerDivider i {
+    color: #FFF;
 }
 
 .socialsSection {
