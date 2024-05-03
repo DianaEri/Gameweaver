@@ -102,6 +102,15 @@ body {
   display: block;
 }
 
+.topnav a svg {
+  height: 1em;
+  fill: #FFF;
+}
+
+.topnav a:hover svg {
+  fill:#F1A438;
+}
+
 .topnav a.icon {
   background: black;
   display: block;
@@ -438,14 +447,6 @@ footer p {
   flex-direction: column;
   width: 100%;
   text-align: center;
-}
-
-
-@media screen and (max-width: 500px) {
-  .navbar a {
-    float: none;
-    display: block;
-  }
 }
 
 @media screen and (max-width: 1024px) {
