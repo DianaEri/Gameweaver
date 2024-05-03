@@ -35,7 +35,7 @@ body {
   display: flex;
   font-size: 28px;
   gap: 1.5em;
-  padding: 2em 3em;
+  padding: 2em 3em 0em 3em;
   width: 90%;
   margin: 0 auto;
 }
@@ -70,6 +70,55 @@ body {
   fill: #F1A438;
 }
 
+.mobile-container {
+  width: 100%;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  color: #F1A438;
+}
+
+.activated {
+  background-color: #000;
+  color: white;
+}
+
 .container:hover, .container :hover img {
   opacity: 1;
   filter: drop-shadow(2px 2px 4px #F1A438);
@@ -77,12 +126,12 @@ body {
 
 .active {
   background-color: #000;
-  padding: 1.8em 1em 0.8em 1em;
+  padding: 1.8em 0.7em 0.5em 0.7em;
   margin-top: -4%;
 }
 
 .active svg {
-  height: 6em;
+  height: 4em;
   fill: #FFF;
 }
 
@@ -96,7 +145,7 @@ body {
 
 h1 {
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
 }
 
@@ -163,19 +212,14 @@ h1 span {
   background-color: #121212;
 }
 
-.section h2 {
-  text-transform: uppercase;
-  font-size: 30px;
-}
-
-.section h2 span {
-  text-transform: uppercase;
-  font-size: 80px;
-}
-
 h2 {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 2.5em;
+}
+
+h2 span {
+  font-size: 1.5em;
+  line-height: 80%;
 }
 
 h3 {
@@ -253,11 +297,6 @@ footer p {
 .socialsSection {
   display: flex;
   gap: 8em;
-}
-
-h2 span {
-  font-size: 1.5em;
-  line-height: 80%;
 }
 
 .socials p {
@@ -406,5 +445,15 @@ h2 span {
   .navbar a {
     float: none;
     display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-container {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
   }
 }

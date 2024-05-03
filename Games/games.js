@@ -27,9 +27,12 @@ function openPage(pageName,elmnt,color) {
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
+    let splitHTML = tablinks[i].innerHTML.split(' ');
+    tablinks[i].innerHTML = splitHTML[0];
   }
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
+  elmnt.innerHTML += " <i class='fa-solid fa-dice-d20' style='color:#c2770e'></i>";
 }
 
 // Get the element with id="defaultOpen" and click on it

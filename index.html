@@ -12,6 +12,24 @@
     <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
 </head>
 <body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="activated">GameWeaver</a>
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+<!-- End smartphone / tablet look -->
+</div>
     <nav id="navbar">
         <div class="navContainer">
             <div class="active">        
@@ -92,7 +110,7 @@
     <div class="section">
             <div id="image"><img src="Media/Desert-ingame.png" alt="Castle"></div>
             <div id="text">
-            <h2 id="pirata-one-regular">Our games<br><span>Achelous</span></h2>
+            <h2 id="pirata-one-regular">Our games<br><span>Prometheus</span></h2>
             <p>
                 The game is set in the fantasy world of Adelat, 
                 which is made of the plains and mountains that 
@@ -198,6 +216,7 @@
             </div>
         </div>
     </footer>
+    <script src="games.js"></script>
 </body>
 </html>
 
