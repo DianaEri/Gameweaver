@@ -215,11 +215,39 @@ h1 span {
 }
 
 .section {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2% 0%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   color: white;
   background-color: #121212;
+  gap: 2%;
+  width: 100%;
+}
+
+#image {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#image img {
+  width: 100%;
+}
+
+#text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section h2 {
+  margin: 0%;
+  padding: 0%;
 }
 
 h2 {
@@ -268,24 +296,6 @@ h3 {
   letter-spacing: 0.2cap;
   font-size: large;
   width: 30vw;
-}
-
-#image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding-left: 2em;
-}
-
-#text p {
-  margin-top: -3%;
 }
 
 footer {
