@@ -159,7 +159,7 @@ h1 {
 }
 
 h1 span {
-  font-size: 4em;
+  font-size: 3em;
   line-height: 80%;
 }
 
@@ -173,6 +173,7 @@ h1 span {
 }
 
 #openingImage {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,10 +185,10 @@ h1 span {
 }
 
 .openingText {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 8%;
 }
 
 .button {
