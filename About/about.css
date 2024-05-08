@@ -399,7 +399,7 @@ h2 span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 18%;
+    width: 16em;
     fill: #000;
     color: #000;
 }
