@@ -82,10 +82,13 @@ body {
   width: 100%;
   margin: auto;
   background-color: #555;
-  height: 500px;
   color: white;
   border-radius: 10px;
   display: none;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1;
 }
 
 .topnav {
@@ -192,10 +195,24 @@ h1 span {
   flex-direction: column;
 }
 
+.openingP {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.openingText h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .opening p {
   color: white;
   font-size: large;
   width: 90%;
+  margin: 0;
+  padding: 2% 0%;
 }
 
 .button {
@@ -221,6 +238,10 @@ h1 span {
   color: #F1A438;
 }
 
+.paddingButton {
+  padding: 5% 0%;
+}
+
 .section {
   padding: 2% 0%;
   display: flex;
@@ -231,6 +252,13 @@ h1 span {
   background-color: #121212;
   gap: 2%;
   width: 100%;
+}
+
+.section p {
+  color: white;
+  font-size: large;
+  margin: 0;
+  padding: 0;
 }
 
 #image {
@@ -249,7 +277,7 @@ h1 span {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
   width: 90%;
 }
@@ -277,6 +305,9 @@ h3 {
 .socials {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em 0em;
   flex-direction: column;
   color: white;
   width: 100%;
@@ -290,35 +321,27 @@ h3 {
   width: 100%;
 }
 
+.socialText {
+  width: 30%;
+}
+
+.socialText h2 {
+  margin: 0;
+  padding: 0;
+}
+
 .socials p {
   color: white;
   font-size: large;
-  width: 30vw;
-}
-
-.section p {
-  color: white;
-  font-size: large;
-}
-
-footer {
-  background-color: white;
-  width: 100%;
-}
-
-footer p {
-  color: #000;
-}
-
-.socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10em 0em;
+  margin: 0;
+  padding: 0;
 }
 
 .socialsSection {
   display: flex;
+  flex: 2 1;
+  justify-content: center;
+  align-items: center;
   gap: 8em;
 }
 
@@ -411,6 +434,15 @@ footer p {
   gap: 2.5em;
 }
 
+footer {
+  background-color: white;
+  width: 100%;
+}
+
+footer p {
+  color: #000;
+}
+
 .footbar a:hover {
   color: #c2770e;
 }
@@ -471,8 +503,22 @@ footer p {
     font-size: 2em;
   }
 
-  .socialsImage {
-    width: 80%;
+  .socials h2 {
+    font-size: 1.5em;
+   }
+ 
+   .socials h2 span {
+     font-size: 2em;
+   }
+
+  .container {
+    width: 2.093em;
+    height: 2.275em;
+  }
+  
+  .icons {
+    font-size: 3.15em;
+    gap: 0.5em;
   }
 
 }
@@ -480,27 +526,57 @@ footer p {
 
 @media screen and (max-width: 1234px) {
 
-  .section h2 {
-   font-size: 1.5em;
+  .socialsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
   }
 
-  .section h2 span {
-    font-size: 2em;
+  .socials {
+    padding: 7em 0em;
   }
+
+  .logoSVG {
+    background-size: 36.4%;
+  }
+  
+  .logo svg {
+    width: 31.5%;
+    padding: 6% 3% 0% 3%;
+  }
+
+  .logoBrand {
+    font-size: 1.5em;
+  }
+  
+  .logoComp {
+    font-size: 0.65em;
+    gap: 2em;
+  }
+
+  .socialText {
+    width: 40%;
+  }
+
 
 }
 
 @media screen and (max-width: 1024px) {
 
   .opening {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: 6em;
     width: 100%;
   }
 
   .openingText {
+    display: flex;
     width: 70%;
     justify-content: center;
     align-items: center;
@@ -509,6 +585,7 @@ footer p {
 
   .openingText p {
     padding: 0% 5%;
+    font-size: 0.9em;
   }
 
   .openingText h1 {
@@ -524,6 +601,10 @@ footer p {
     display: none;
   }
 
+  .opening p {
+    padding: 2% 0% 3% 0%;
+  }
+
   .mobile-container {
     display: block;
   }
@@ -537,11 +618,20 @@ footer p {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
   }
 
   #text h2 {
     text-align: center;
+  }
+
+  #text {
+    align-items: center;
+    width: 70%;
+  }
+
+  #text p {
+    font-size: 0.9em;
   }
 
   .left {
@@ -551,29 +641,34 @@ footer p {
   }
 
   .socials {
-    padding: 1em 0em;
+    padding: 6em 0em;
+  }
+
+  .socials h2 {
+    text-align: center;
   }
 
   .socialsSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
-    gap: 1em;
+    gap: 2em;
   }
 
   .socialText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 1.5em;
+    width: 70%;
   }
 
-  .height {
+  .socialText p {
+    font-size: 0.9em;
+  }
+
+  .footnav {
     display: flex;
+    gap: 1em;
+    width: 100%;
+    padding: 4.5em 0em 2em 0em;
     justify-content: center;
-    align-items: center;
+    font-size: 1.3em;
   }
 
 }
@@ -586,4 +681,38 @@ footer p {
     flex-direction: column;
   }
 
+  .socialText {
+    width: 90%;
+  }
+
+  #text {
+    width: 90%;
+  }
+
+  .opening p {
+    padding: 2% 0% 5% 0%;
+  }
+
+  .container {
+    width: 1.90463em;
+    height: 2.07025em;
+  }
+  
+  .icons {
+    font-size: 2.205em;
+    gap: 0.5em;
+  }
+
+  .height {
+  width: 50vw;
+  }
+
 }
+
+@media screen and (max-width: 450px) {
+
+  .height {
+  width: 90vw;
+  }
+}
+
