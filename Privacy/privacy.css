@@ -668,9 +668,16 @@ h2 span {
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+    }
+}
   
-  @media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 450px) {
+
     .socials p {
     width: 70vw;
     }
@@ -684,5 +691,5 @@ h2 span {
         gap: 2em;
     }
 
-  }
+}
   

@@ -197,7 +197,7 @@ h1 span {
 
 .openingP {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   width: 100%;
 }
@@ -584,7 +584,6 @@ footer p {
   }
 
   .openingText p {
-    padding: 0% 5%;
     font-size: 0.9em;
   }
 
@@ -707,6 +706,13 @@ footer p {
   width: 50vw;
   }
 
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+      float: none;
+      display: block;
+  }
 }
 
 @media screen and (max-width: 450px) {
