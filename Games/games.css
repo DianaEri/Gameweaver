@@ -176,6 +176,11 @@ h1 span {
     gap: 3em;
 }
 
+.opening .rowOne {
+    display: flex;
+    flex-direction: row;
+}
+
 .opening .welcomeText {
     display: flex;
     flex-direction: column;
@@ -740,6 +745,19 @@ footer p {
     .tabcontent .rowOne h3 {
         font-size: 4em;
     }
+
+    .rowOne .welcomeText h2 {
+        font-size: 1.5em;
+    }
+    
+    .rowOne .welcomeText h3 {
+        font-size: 4em;
+    }
+
+    .opening .rowOne {
+        display: flex;
+        flex-direction: column;
+    }
     
 
   }
@@ -748,9 +766,13 @@ footer p {
 
     .rowOne {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-    
 
+    .opening .welcomeText {
+        width: 80%;
+    }
 
   }
   
@@ -804,31 +826,6 @@ footer p {
       justify-content: center;
       margin-top: 6em;
       width: 100%;
-    }
-  
-    .openingText {
-      display: flex;
-      width: 70%;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-  
-    .openingText p {
-      font-size: 0.9em;
-    }
-  
-    .openingText h1 {
-      font-size: 2em;
-      text-align: center;
-    }
-  
-    .openingText h1 span {
-      font-size: 1.5em;
-    }
-  
-    .opening img {
-      display: none;
     }
   
     .opening p {
