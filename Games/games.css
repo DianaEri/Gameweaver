@@ -759,6 +759,18 @@ footer p {
         flex-direction: column;
     }
     
+    .Map {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Map img {
+        width: 70%;
+    }
+
+    
 
   }
 
@@ -772,6 +784,10 @@ footer p {
 
     .opening .welcomeText {
         width: 80%;
+    }
+
+    .Map img {
+        width: 70%;
     }
 
   }
