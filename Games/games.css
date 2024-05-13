@@ -993,6 +993,14 @@ footer p {
     .Map img {
         width: 90%;
     }
+
+    .openingHeader {
+        padding-top: 10em;
+    }
+
+    .opening {
+    margin-top: 6vh;
+    }
   
   }
 
@@ -1014,6 +1022,10 @@ footer p {
 
     .Map img {
         width: 100%;
+    }
+
+    .openingHeader {
+        padding-top: 5em;
     }
 
   }

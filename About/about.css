@@ -30,12 +30,12 @@ body {
     z-index: 1;
     box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
 }
-  
+
 .navContainer {
     display: flex;
     font-size: 28px;
     gap: 1.5em;
-    padding: 2em 3em 0em 3em;
+    /* padding: 2em 3em 0em 3em;  */
     width: 90%;
     margin: 0 auto;
 }
@@ -45,6 +45,12 @@ body {
     height: 1.5em;
 }
 
+.active {
+    background-color: #000;
+    padding: 1.8em 0.7em 0.5em 0.7em;
+    margin-top: 0;
+}
+
 .navbar-pages a, .navbar-socials a {
     color: white;
     text-decoration: none;
@@ -52,12 +58,14 @@ body {
 }
 
 .navbar-pages {
+    align-items: center;
     margin-left: auto;
     display: flex;
     gap: 1.5em;
 }
 
 .navbar-socials {
+    align-items: center;
     display: flex;
     gap: 0.5em;
 }
@@ -70,17 +78,72 @@ body {
     fill: #F1A438;
 }
 
+.mobile-container {
+    width: 100%;
+    margin: auto;
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+    display: none;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-family: "TUIVEN Trial";
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a svg {
+    height: 0.8em;
+    fill: #FFF;
+}
+
+.topnav a:hover svg {
+    fill:#F1A438;
+}
+
+.topnav a:hover {
+    color: #F1A438;
+}
+
+.activated {
+    background-color: #000;
+    color: white;
+}
+
 .container:hover, .container :hover img {
     opacity: 1;
     filter: drop-shadow(2px 2px 4px #F1A438);
-    }
-
-.active {
-    background-color: #000;
-    padding: 1.8em 0.7em 0.5em 0.7em;
-    margin-top: -4%;
 }
-    
+
 .active svg {
     height: 4em;
     fill: #FFF;
@@ -117,11 +180,8 @@ h1 span {
 
 .rowOne, .rowThree {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    gap: 6em;
+    flex-wrap: wrap;
+    width: 100%;
     text-align: center;
 }
 
@@ -130,8 +190,24 @@ h1 span {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 30%;
     text-align: center;
+}
+
+.aboutBox {
+    flex: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+}
+
+.content {
+    width: 23em;
+}
+
+.content h2, .content h3 {
+    margin: 0;
+    padding: 0;
 }
 
 .openingHeader {
@@ -141,7 +217,7 @@ h1 span {
     justify-content: center;
     gap: 1em;
     background-image: url("../Media/office.jpg");
-    background-size: 100%;
+    background-size: 1920px;
     padding-top: 20em;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
     box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
@@ -217,6 +293,11 @@ h2 {
     color: #FFF;
     text-align: center;
 }
+  
+h2 span {
+    font-size: 1.5em;
+    line-height: 80%;
+}
 
 h3 {
     text-transform: uppercase;
@@ -231,28 +312,8 @@ h4 {
     font-size: larger;
 }
 
-.socials {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    height: 50em;
-    background-image: url("../Media/Dragon.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-
-.socials p {
-    color: white;
-    letter-spacing: 0.2cap;
-    font-size: large;
-    width: 30vw;
-}
-
 .opening p {
     color: white;
-    letter-spacing: 0.2cap;
     font-size: large;
 }
 
@@ -261,7 +322,6 @@ h4 {
     align-items: center;
     justify-content: center;
     color: white;
-    letter-spacing: 0.2cap;
     font-size: 2em;
 }
 
@@ -279,7 +339,6 @@ h4 {
 }
 
 .section p {
-    letter-spacing: 0.2cap;
     font-size: large;
 }
 
@@ -325,74 +384,91 @@ h4 {
     margin-top: -3%;
 }
 
-footer {
-    background-color: white;
-    width: 100%;
-}
-
-footer p {
-    color: #000;
-}
 
 .socials {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10em 0em;
-}
-
-.socialsSection {
+    flex-direction: column;
+    color: white;
+    width: 100%;
+    height: 50em;
+    background-image: url("../Media/Dragon.png");
+    /* background-size: 100% auto; */
+    background-repeat: no-repeat;
+  }
+  
+  .socialsImage {
+    width: 100%;
+  }
+  
+  .socialText {
+    width: 30%;
+  }
+  
+  .socialText h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .socials p {
+    color: white;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .socialsSection {
     display: flex;
+    flex: 2 1;
+    justify-content: center;
+    align-items: center;
     gap: 8em;
-}
-
-h2 span {
-    font-size: 1.5em;
-}
-
-.socials p {
-    margin-top: -5%;
-}
-
-.icons {
+  }
+  
+  .icons {
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 4.5em;
     gap: 0.5em;
-}
-
-.container {
+  }
+  
+  .container {
     position: relative;
     width: 2.3em;
     height: 2.5em;
-}
-
-#centered {
+  }
+  
+  #centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.container img {
+  }
+  
+  .container img {
     opacity: 0.3;
-}
-
-.container, a, button {
+  }
+  
+  .container, a, button {
     cursor: pointer;
-}
-
-.container:hover, .container :hover img {
+  }
+  
+  .container:hover, .container :hover img {
     opacity: 1;
     filter: drop-shadow(2px 2px 4px #F1A438);
-}
-
-.logoLink {
+  }
+  
+  .logoLink {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     position: absolute;
     bottom: -15%;
     display: flex;
@@ -402,9 +478,9 @@ h2 span {
     width: 16em;
     fill: #000;
     color: #000;
-}
-
-.logoSVG {
+  }
+  
+  .logoSVG {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,89 +488,364 @@ h2 span {
     background-size: 52%;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-.logo svg {
+  }
+  
+  .logo svg {
     width: 45%;
     height: auto;
     fill: #000;
     padding: 6% 3% 0% 3%;
-}
-
-.logo:hover svg, .logo:hover {
+  }
+  
+  .logo:hover svg, .logo:hover {
     fill: #c2770e;
     color: #c2770e;
     cursor: pointer;
-}
-
-.logoBrand {
+  }
+  
+  .logoBrand {
     text-transform: uppercase;
     font-size: 2em;
-}
-
-.logoComp {
+  }
+  
+  .logoComp {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     font-size: 0.71em;
     gap: 2.5em;
-}
-
-.footbar a:hover {
+  }
+  
+  footer {
+    background-color: white;
+    width: 100%;
+  }
+  
+  footer p {
+    color: #000;
+  }
+  
+  .footbar a:hover {
     color: #c2770e;
-}
-
-.footnav {
+  }
+  
+  .footnav {
     display: flex;
     gap: 1em;
     width: 100%;
     padding: 6em 0em 2em 0em;
     justify-content: center;
     font-size: 1.3em;
-}
-
-.footnav a {
+  }
+  
+  .footnav a {
     font-family: "TUIVEN Trial";
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     color: #000;
     text-decoration-line: none;
-}
-
-.footnav span {
+  }
+  
+  .footnav span {
     color: #c7c5ca;
-}
-
-.credits {
+  }
+  
+  .credits {
     width: 100%;
     background-color: #e9e4e0;
     padding: 1em 0em;
-}
-
-.credits a {
+  }
+  
+  .credits a {
     color: #c2770e;
-}
-
-.credits a:hover {
+  }
+  
+  .credits a:hover {
     text-decoration: none;
     color: #c2770e;
-}
-
-.footbar {
+  }
+  
+  .footbar {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     text-align: center;
-}
+  }
 
+@media screen and (max-width: 1550px) {
 
-@media screen and (max-width: 500px) {
+    .section h2 {
+     font-size: 1.5em;
+    }
+  
+    .section h2 span {
+      font-size: 2em;
+    }
+  
+    .socials h2 {
+      font-size: 1.5em;
+     }
+   
+     .socials h2 span {
+       font-size: 2em;
+     }
+  
+    .container {
+      width: 2.093em;
+      height: 2.275em;
+    }
+    
+    .icons {
+      font-size: 3.15em;
+      gap: 0.5em;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 1234px) {
+  
+    .socialsSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      gap: 2em;
+    }
+  
+    .socials {
+      padding: 7em 0em;
+    }
+  
+    .logoSVG {
+      background-size: 36.4%;
+    }
+    
+    .logo svg {
+      width: 31.5%;
+      padding: 6% 3% 0% 3%;
+    }
+  
+    .logoBrand {
+      font-size: 1.5em;
+    }
+    
+    .logoComp {
+      font-size: 0.65em;
+      gap: 2em;
+    }
+  
+    .socialText {
+      width: 40%;
+    }
+    
+    .aboutBox {
+        flex: 100%;
+    }
+
+    .rowOne, .rowThree {
+        gap: 3em;
+    }
+  
+  }
+  
+  @media screen and (max-width: 1024px) {
+  
+    .opening {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6em;
+      width: 100%;
+      margin-top: 2vh;
+    }
+  
+    .openingText {
+      display: flex;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .openingText p {
+      font-size: 0.9em;
+    }
+  
+    .openingText h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    .openingText h1 span {
+      font-size: 1.5em;
+    }
+  
+    .opening img {
+      display: none;
+    }
+  
+    .opening p {
+      padding: 2% 0% 3% 0%;
+    }
+  
+    .mobile-container {
+      display: block;
+    }
+  
+    #navbar {
+      display: none;
+    }
+  
+    .section {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-bottom: 2em;
+    }
+  
+    #text h2 {
+      text-align: center;
+    }
+  
+    #text {
+      align-items: center;
+      width: 70%;
+    }
+  
+    #text p {
+      font-size: 0.9em;
+    }
+  
+    .left {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .socials {
+      padding: 6em 0em;
+    }
+  
+    .socials h2 {
+      text-align: center;
+    }
+  
+    .socialsSection {
+      width: 100%;
+      gap: 2em;
+    }
+  
+    .socialText {
+      gap: 1.5em;
+      width: 70%;
+    }
+  
+    .socialText p {
+      font-size: 0.9em;
+    }
+  
+    .footnav {
+      display: flex;
+      gap: 1em;
+      width: 100%;
+      padding: 4.5em 0em 2em 0em;
+      justify-content: center;
+      font-size: 1.3em;
+    }
+
+    .introText {
+        width: 50%;
+        font-size: 1em;
+    }    
+  
+  }
+  
+  @media screen and (max-width: 750px) {
+  
+    .openingText {
+      width: 90%;
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    .socialText {
+      width: 90%;
+    }
+  
+    #text {
+      width: 90%;
+    }
+  
+    .opening p {
+      padding: 2% 0% 5% 0%;
+    }
+  
+    .container {
+      width: 1.90463em;
+      height: 2.07025em;
+    }
+    
+    .icons {
+      font-size: 2.205em;
+      gap: 0.5em;
+    }
+  
+    .height {
+    width: 50vw;
+    }
+
+    .introText {
+        width: 60%;
+        font-size: 0.8em;
+    }  
+    
+    .openingHeader {
+        padding-top: 10em;
+    }
+
+  }
+
+  @media screen and (max-width: 639px) {
+    .introText {
+        width: 70%;
+        font-size: 0.6em;
+    }  
+  }
+  
+  @media screen and (max-width: 500px) {
     .navbar a {
         float: none;
         display: block;
     }
-}
+
+    .introText {
+        width: 80%;
+        font-size: 0.6em;
+    }
+
+    .openingHeader {
+        padding-top: 5em;
+    }
+
+  }
+  
+  @media screen and (max-width: 450px) {
+  
+    .height {
+    width: 90vw;
+    }
+
+    .introText {
+        width: 90%;
+        font-size: 0.6em;
+    }  
+  }
+  
