@@ -272,12 +272,18 @@ h1 span {
     height: 1.6em;
 }
 
+.headerH2 {
+    display: flex;
+    flex-direction: row;
+}
+
 .headerH2 h2 {
     margin: 0;
     padding: 0;
     letter-spacing: 0.03em;
-    display: flex;
-    align-items: row;
+    text-transform: uppercase;
+    font-size: 3em;
+    color: #FFF;
 }
 
 .headerH3 h3 {
@@ -401,13 +407,6 @@ h1 span {
 
 body h2 i {
     color: #c2770e;
-} 
-
-.headerH2 h2 { 
-    text-transform: uppercase;
-    font-size: 3em;
-    color: #FFF;
-    text-align: center;
 } 
 
 .socials h2 {
@@ -550,7 +549,7 @@ footer p {
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 0.7em;
+    font-size: 1em;
     letter-spacing: 0em;
 }
 
@@ -734,7 +733,10 @@ footer p {
   @media screen and (max-width: 1508px) {
 
     .welcomeText {
-        width: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .tabcontent .rowOne h2 {
@@ -757,6 +759,12 @@ footer p {
         display: flex;
         flex-direction: column;
     }
+
+    .rowOne {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     .Map {
         display: flex;
@@ -766,27 +774,34 @@ footer p {
     }
 
     .Map img {
-        width: 70%;
+        width: 90%;
     }
 
-    
+    .headerH2 {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .opening .welcomeText {
+        align-items: center;
+    }
+
+    .opening .welcomeText {
+        width: 85%;
+    }
 
   }
 
   @media screen and (max-width: 1469px) {
-
-    .rowOne {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .opening .welcomeText {
         width: 80%;
     }
 
     .Map img {
-        width: 70%;
+        width: 85%;
     }
 
   }
@@ -926,6 +941,14 @@ footer p {
       justify-content: center;
       font-size: 1.3em;
     }
+
+    .opening .welcomeText p {
+        font-size: 1em;
+    }
+
+    .opening .headerH3 {
+        font-size: 0.6em;
+    }
   
   }
   
@@ -962,6 +985,14 @@ footer p {
     .height {
     width: 50vw;
     }
+
+    .opening .welcomeText {
+        width: 90%;
+    }
+
+    .Map img {
+        width: 90%;
+    }
   
   }
 
@@ -975,6 +1006,14 @@ footer p {
         background-color: #151B25;
         width: 90%;
         padding: 1em;
+    }
+
+    .opening .welcomeText {
+        width: 100%;
+    }
+
+    .Map img {
+        width: 100%;
     }
 
   }
