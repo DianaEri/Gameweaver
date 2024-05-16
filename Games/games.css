@@ -391,7 +391,7 @@ h1 span {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     color: #fff;
 } 
 
@@ -950,6 +950,14 @@ footer p {
         font-size: 0.6em;
     }
   
+  }
+
+  @media screen and (max-width: 774px) {
+  
+    .divider {
+    display: none;
+    }
+
   }
   
   @media screen and (max-width: 750px) {
