@@ -226,6 +226,10 @@ input[type=text]::placeholder {
     color: #FFF;
 }
 
+.container a {
+  color: #FFF;
+}
+
 input[type=email]::placeholder {
   color: #FFF;
 }
