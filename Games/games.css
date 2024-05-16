@@ -4,7 +4,6 @@ body {
     background-size: 40%;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -452,7 +451,6 @@ h4 {
     flex-direction: column;
     color: white;
     width: 100%;
-    height: 50em;
     background-image: url("../Media/Dragon.png");
     /* background-size: 100% auto; */
     background-repeat: no-repeat;
