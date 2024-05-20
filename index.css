@@ -315,6 +315,14 @@ h3 {
   background-repeat: no-repeat;
 }
 
+.computer {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
 .socialsImage {
   width: 100%;
 }
@@ -507,11 +515,11 @@ footer p {
 
   .socials h2 {
     font-size: 1.5em;
-   }
+  }
  
    .socials h2 span {
      font-size: 2em;
-   }
+  }
 
   .container {
     width: 2.093em;
@@ -663,7 +671,7 @@ footer p {
 
   .socialText {
     gap: 1.5em;
-    width: 70%;
+    width: 50%;
   }
 
   .socialText p {
@@ -690,7 +698,7 @@ footer p {
   }
 
   .socialText {
-    width: 90%;
+    width: 60%;
   }
 
   #text {
@@ -717,11 +725,34 @@ footer p {
 
 }
 
+@media screen and (max-width: 611px) {
+  .computer {
+    display: none;
+  }
+  
+  .mobile {
+    display: block;
+  }
+
+  .socials h2 span {
+    font-size: 1.5em;
+  }
+
+  .socials h2 span.mobile-span {
+    font-size: 1.7em;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .navbar a {
       float: none;
       display: block;
   }
+
+  .socialText {
+    width: 80%;
+  }
+
 }
 
 @media screen and (max-width: 450px) {

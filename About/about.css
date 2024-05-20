@@ -318,24 +318,23 @@ h4 {
 }
 
 .aboutParagraph {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2em;
 }
 
 .introText {
-    width: 40%;
+  width: 40%;
 }
 
 .section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: #121212;
-    padding: 4em 0em 7em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #121212;
 }
 
 .section p {
@@ -366,22 +365,28 @@ h4 {
 }
 
 #image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  padding: 5em 0em;
+}
+
+#text h2 {
+  padding: 0;
+  margin: 0;
 }
 
 #text p {
-    margin-top: -3%;
+  margin-top: 0;
 }
 
 .container a {
@@ -390,194 +395,202 @@ h4 {
 
 
 .socials {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10em 0em;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    background-image: url("../Media/Dragon.png");
-    /* background-size: 100% auto; */
-    background-repeat: no-repeat;
-  }
-  
-  .socialsImage {
-    width: 100%;
-  }
-  
-  .socialText {
-    width: 30%;
-  }
-  
-  .socialText h2 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .socials p {
-    color: white;
-    font-size: large;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .socialsSection {
-    display: flex;
-    flex: 2 1;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
-  }
-  
-  .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4.5em;
-    gap: 0.5em;
-  }
-  
-  .container {
-    position: relative;
-    width: 2.3em;
-    height: 2.5em;
-  }
-  
-  #centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .container img {
-    opacity: 0.3;
-  }
-  
-  .container, a, button {
-    cursor: pointer;
-  }
-  
-  .container:hover, .container :hover img {
-    opacity: 1;
-    filter: drop-shadow(2px 2px 4px #F1A438);
-  }
-  
-  .logoLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo {
-    position: absolute;
-    bottom: -15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 16em;
-    fill: #000;
-    color: #000;
-  }
-  
-  .logoSVG {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../Media/Controller-background.png");
-    background-size: 52%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .logo svg {
-    width: 45%;
-    height: auto;
-    fill: #000;
-    padding: 6% 3% 0% 3%;
-  }
-  
-  .logo:hover svg, .logo:hover {
-    fill: #c2770e;
-    color: #c2770e;
-    cursor: pointer;
-  }
-  
-  .logoBrand {
-    text-transform: uppercase;
-    font-size: 2em;
-  }
-  
-  .logoComp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 0.71em;
-    gap: 2.5em;
-  }
-  
-  footer {
-    background-color: white;
-    width: 100%;
-  }
-  
-  footer p {
-    color: #000;
-  }
-  
-  .footbar a:hover {
-    color: #c2770e;
-  }
-  
-  .footnav {
-    display: flex;
-    gap: 1em;
-    width: 100%;
-    padding: 6em 0em 2em 0em;
-    justify-content: center;
-    font-size: 1.3em;
-  }
-  
-  .footnav a {
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration-line: none;
-  }
-  
-  .footnav span {
-    color: #c7c5ca;
-  }
-  
-  .credits {
-    width: 100%;
-    background-color: #e9e4e0;
-    padding: 1em 0em;
-  }
-  
-  .credits a {
-    color: #c2770e;
-  }
-  
-  .credits a:hover {
-    text-decoration: none;
-    color: #c2770e;
-  }
-  
-  .footbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em 0em;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  background-image: url("../Media/Dragon.png");
+  /* background-size: 100% auto; */
+  background-repeat: no-repeat;
+}
+
+.computer {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+.socialsImage {
+  width: 100%;
+}
+
+.socialText {
+  width: 30%;
+}
+
+.socialText h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.socials p {
+  color: white;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+}
+
+.socialsSection {
+  display: flex;
+  flex: 2 1;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5em;
+  gap: 0.5em;
+}
+
+.container {
+  position: relative;
+  width: 2.3em;
+  height: 2.5em;
+}
+
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img {
+  opacity: 0.3;
+}
+
+.container, a, button {
+  cursor: pointer;
+}
+
+.container:hover, .container :hover img {
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  bottom: -15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16em;
+  fill: #000;
+  color: #000;
+}
+
+.logoSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Media/Controller-background.png");
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo svg {
+  width: 45%;
+  height: auto;
+  fill: #000;
+  padding: 6% 3% 0% 3%;
+}
+
+.logo:hover svg, .logo:hover {
+  fill: #c2770e;
+  color: #c2770e;
+  cursor: pointer;
+}
+
+.logoBrand {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+.logoComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.71em;
+  gap: 2.5em;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}
+
+footer p {
+  color: #000;
+}
+
+.footbar a:hover {
+  color: #c2770e;
+}
+
+.footnav {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  padding: 6em 0em 2em 0em;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+.footnav a {
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration-line: none;
+}
+
+.footnav span {
+  color: #c7c5ca;
+}
+
+.credits {
+  width: 100%;
+  background-color: #e9e4e0;
+  padding: 1em 0em;
+}
+
+.credits a {
+  color: #c2770e;
+}
+
+.credits a:hover {
+  text-decoration: none;
+  color: #c2770e;
+}
+
+.footbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
 
 @media screen and (max-width: 1550px) {
 
@@ -711,7 +724,6 @@ h4 {
       align-items: center;
       justify-content: center;
       width: 100%;
-      padding-bottom: 2em;
     }
   
     #text h2 {
@@ -720,7 +732,7 @@ h4 {
   
     #text {
       align-items: center;
-      width: 70%;
+      width: 50%;
     }
   
     #text p {
@@ -748,7 +760,7 @@ h4 {
   
     .socialText {
       gap: 1.5em;
-      width: 70%;
+      width: 50%;
     }
   
     .socialText p {
@@ -788,11 +800,11 @@ h4 {
     }
   
     .socialText {
-      width: 90%;
+      width: 60%;
     }
   
     #text {
-      width: 90%;
+      width: 70%;
     }
   
     .opening p {
@@ -830,6 +842,28 @@ h4 {
         font-size: 0.6em;
     }  
   }
+
+  @media screen and (max-width: 611px) {
+    .computer {
+      display: none;
+    }
+    
+    .mobile {
+      display: block;
+    }
+  
+    .socials h2 span {
+      font-size: 1.5em;
+    }
+  
+    .socials h2 span.mobile-span {
+      font-size: 1.7em;
+    }
+
+    #text {
+      width: 80%;
+    }
+  }
   
   @media screen and (max-width: 500px) {
     .navbar a {
@@ -844,6 +878,10 @@ h4 {
 
     .openingHeader {
         padding-top: 5em;
+    }
+
+    .socialText {
+      width: 80%;
     }
 
   }

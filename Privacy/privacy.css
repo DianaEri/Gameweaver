@@ -218,19 +218,29 @@ h1 span {
     margin: 0.7em 0;
 }
 
-h2 {
+.socials h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+  }
+  
+.socials h2 span {
+    font-size: 1.5em;
+    line-height: 80%;
+}
+
+.section h2 {
     text-transform: uppercase;
     font-size: 2.5em;
     color: #fff;
 }
 
-h3 {
+.section h3 {
     text-transform: uppercase;
     font-size: 2em;
     color: #fff;
 }
 
-h4 {
+.section h4 {
     margin-top: 3em;
     color: #c2770e;
     font-size: larger;
@@ -247,6 +257,14 @@ h4 {
     width: 100%;
     background-image: url("../Media/Dragon.png");
     background-repeat: no-repeat;
+}
+
+.computer {
+    display: block;
+  }
+  
+  .mobile {
+    display: none;
 }
 
 .socialsImage {
@@ -458,6 +476,14 @@ h2 span {
       gap: 0.5em;
     }
 
+    .socials h2 {
+        font-size: 1.5em;
+    }
+     
+    .socials h2 span {
+        font-size: 2em;
+    }
+
     .width {
         display: flex;
         flex-direction: column;
@@ -581,12 +607,12 @@ h2 span {
       gap: 1.5em;
     }
   
-    .socialText h2 {
-      font-size: large;
-    }
-  
     .socialText p {
       font-size: 0.9em;
+    }
+
+    .socials h2 {
+        text-align: center;
     }
   
     .height {
@@ -657,18 +683,36 @@ h2 span {
         font-size: 1em;
     }
   
-    h2 {
+    .section h2 {
         font-size: 1.6em;
     }
     
-    h3 {
+    .section h3 {
         font-size: 1.3em;
     }
     
-    h4 {
+    .section h4 {
         margin-top: 3em;
     }
 
+}
+
+@media screen and (max-width: 611px) {
+    .computer {
+      display: none;
+    }
+    
+    .mobile {
+      display: block;
+    }
+  
+    .socials h2 span {
+      font-size: 1.5em;
+    }
+  
+    .socials h2 span.mobile-span {
+      font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 500px) {

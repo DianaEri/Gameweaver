@@ -458,49 +458,57 @@ h4 {
     background-image: url("../Media/Dragon.png");
     /* background-size: 100% auto; */
     background-repeat: no-repeat;
-  }
+}
+
+.computer {
+    display: block;
+}
   
-  .socialsImage {
+.mobile {
+    display: none;
+}
+  
+.socialsImage {
     width: 100%;
-  }
+}
   
-  .socialText {
+.socialText {
     width: 30%;
-  }
+}
   
-  .socialText h2 {
+.socialText h2 {
     margin: 0;
     padding: 0;
-  }
+}
   
-  .socials p {
+.socials p {
     color: white;
     font-size: large;
     margin: 0;
     padding: 0;
-  }
+}
   
-  .socialsSection {
+.socialsSection {
     display: flex;
     flex: 2 1;
     justify-content: center;
     align-items: center;
     gap: 8em;
-  }
+}
   
-  .icons {
+.icons {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 4.5em;
     gap: 0.5em;
-  }
+}
   
-  .container {
+.container {
     position: relative;
     width: 2.3em;
     height: 2.5em;
-  }
+}
 
 .opening p {
     color: white;
@@ -896,6 +904,11 @@ footer p {
     #text p {
       font-size: 0.9em;
     }
+
+    .socialText {
+        gap: 1.5em;
+        width: 50%;
+    }
   
     .left {
       display: flex;
@@ -928,11 +941,6 @@ footer p {
     .socialsSection {
       width: 100%;
       gap: 2em;
-    }
-  
-    .socialText {
-      gap: 1.5em;
-      width: 70%;
     }
   
     .socialText p {
@@ -983,7 +991,7 @@ footer p {
     }
   
     .socialText {
-      width: 90%;
+        width: 60%;
     }
   
     #text {
@@ -1030,6 +1038,24 @@ footer p {
   
   }
 
+@media screen and (max-width: 611px) {
+    .computer {
+      display: none;
+    }
+    
+    .mobile {
+      display: block;
+    }
+  
+    .socials h2 span {
+      font-size: 1.5em;
+    }
+  
+    .socials h2 span.mobile-span {
+      font-size: 1.7em;
+    }
+}
+
   @media screen and (max-width: 500px) {
     .navbar a {
         float: none;
@@ -1058,6 +1084,9 @@ footer p {
         width: 95%;
     }
 
+    .socialText {
+        width: 80%;
+    }
   }
   
   @media screen and (max-width: 450px) {

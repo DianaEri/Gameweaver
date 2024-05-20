@@ -347,469 +347,499 @@ h4 {
     background-image: url("../Media/Dragon.png");
     /* background-size: 100% auto; */
     background-repeat: no-repeat;
+}
+
+.computer {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+  
+.socialsImage {
+  width: 100%;
+}
+  
+.socialText {
+  width: 30%;
+}
+  
+.socialText h2 {
+  margin: 0;
+  padding: 0;
+}
+  
+.socials p {
+  color: white;
+  font-size: large;
+  margin: 0;
+  padding: 0;
+}
+  
+.socialsSection {
+  display: flex;
+  flex: 2 1;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+  
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5em;
+  gap: 0.5em;
+}
+  
+.container {
+  position: relative;
+  width: 2.3em;
+  height: 2.5em;
+}
+  
+#centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+.container img {
+  opacity: 0.3;
+}
+  
+.container, a, button {
+  cursor: pointer;
+}
+  
+.container:hover, .container :hover img {
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
+}
+  
+.logoLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.logo {
+  position: absolute;
+  bottom: -15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16em;
+  fill: #000;
+  color: #000;
+}
+  
+.logoSVG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Media/Controller-background.png");
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+.logo svg {
+  width: 45%;
+  height: auto;
+  fill: #000;
+  padding: 6% 3% 0% 3%;
+}
+  
+.logo:hover svg, .logo:hover {
+  fill: #c2770e;
+  color: #c2770e;
+  cursor: pointer;
+}
+  
+.logoBrand {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+  
+.logoComp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.71em;
+  gap: 2.5em;
+}
+  
+footer {
+  background-color: white;
+  width: 100%;
+}
+  
+footer p {
+  color: #000;
+}
+  
+.footbar a:hover {
+  color: #c2770e;
+}
+  
+.footnav {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  padding: 6em 0em 2em 0em;
+  justify-content: center;
+  font-size: 1.3em;
+}
+  
+.footnav a {
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration-line: none;
   }
   
-  .socialsImage {
-    width: 100%;
-  }
+.footnav span {
+  color: #c7c5ca;
+}
   
-  .socialText {
-    width: 30%;
-  }
+.credits {
+  width: 100%;
+  background-color: #e9e4e0;
+  padding: 1em 0em;
+}
   
-  .socialText h2 {
-    margin: 0;
-    padding: 0;
+.credits a {
+  color: #c2770e;
+}
+
+.credits a:hover {
+  text-decoration: none;
+  color: #c2770e;
+}
+
+.footbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1550px) {
+
+  .section h2 {
+    font-size: 1.5em;
   }
-  
-  .socials p {
-    color: white;
-    font-size: large;
-    margin: 0;
-    padding: 0;
+
+  .section h2 span {
+    font-size: 2em;
   }
+
+  .socials h2 {
+    font-size: 1.5em;
+    }
   
-  .socialsSection {
-    display: flex;
-    flex: 2 1;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
+    .socials h2 span {
+      font-size: 2em;
+    }
+
+  .container {
+    width: 2.093em;
+    height: 2.275em;
   }
   
   .icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 4.5em;
+    font-size: 3.15em;
     gap: 0.5em;
   }
-  
-  .container {
-    position: relative;
-    width: 2.3em;
-    height: 2.5em;
+
+  .width {
+      width: 50%;
+  }
+
+  h1 {
+      font-size: 4.5em;
   }
   
-  #centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .divider {
+      font-size: 1.7em;
   }
-  
-  .container img {
-    opacity: 0.3;
-  }
-  
-  .container, a, button {
-    cursor: pointer;
-  }
-  
-  .container:hover, .container :hover img {
-    opacity: 1;
-    filter: drop-shadow(2px 2px 4px #F1A438);
-  }
-  
-  .logoLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .logo {
-    position: absolute;
-    bottom: -15%;
+
+}
+
+
+@media screen and (max-width: 1234px) {
+
+  .socialsSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 16em;
-    fill: #000;
-    color: #000;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
   }
-  
+
+  .socials {
+    padding: 7em 0em;
+  }
+
   .logoSVG {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../Media/Controller-background.png");
-    background-size: 52%;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: 36.4%;
   }
   
   .logo svg {
-    width: 45%;
-    height: auto;
-    fill: #000;
+    width: 31.5%;
     padding: 6% 3% 0% 3%;
   }
-  
-  .logo:hover svg, .logo:hover {
-    fill: #c2770e;
-    color: #c2770e;
-    cursor: pointer;
-  }
-  
+
   .logoBrand {
-    text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   .logoComp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 0.71em;
-    gap: 2.5em;
+    font-size: 0.65em;
+    gap: 2em;
+  }
+
+  .socialText {
+    width: 40%;
   }
   
-  footer {
-    background-color: white;
+  .width {
+      width: 60%;
+  }
+
+  h1 {
+      font-size: 4.5em;
+  }
+  
+  .divider {
+      font-size: 1.7em;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6em;
     width: 100%;
   }
-  
-  footer p {
-    color: #000;
+
+  .openingText {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  
-  .footbar a:hover {
-    color: #c2770e;
+
+  .openingText p {
+    font-size: 0.9em;
   }
-  
+
+  .openingText h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .openingText h1 span {
+    font-size: 1.5em;
+  }
+
+  .opening img {
+    display: none;
+  }
+
+  .opening p {
+    padding: 2% 0% 3% 0%;
+  }
+
+  .mobile-container {
+    display: block;
+  }
+
+  #navbar {
+    display: none;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2em;
+  }
+
+  #text h2 {
+    text-align: center;
+  }
+
+  #text {
+    align-items: center;
+    width: 70%;
+  }
+
+  #text p {
+    font-size: 0.9em;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .socials {
+    padding: 6em 0em;
+  }
+
+  .socials h2 {
+    text-align: center;
+  }
+
+  .socialsSection {
+    width: 100%;
+    gap: 2em;
+  }
+
+  .socialText {
+    gap: 1.5em;
+    width: 50%;
+  }
+
+  .socialText p {
+    font-size: 0.9em;
+  }
+
   .footnav {
     display: flex;
     gap: 1em;
     width: 100%;
-    padding: 6em 0em 2em 0em;
+    padding: 4.5em 0em 2em 0em;
     justify-content: center;
     font-size: 1.3em;
   }
-  
-  .footnav a {
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration-line: none;
+
+  .width {
+      width: 65%;
+  }
+
+  h1 {
+      font-size: 4.5em;
   }
   
-  .footnav span {
-    color: #c7c5ca;
+  .divider {
+      font-size: 1.7em;
   }
-  
-  .credits {
-    width: 100%;
-    background-color: #e9e4e0;
-    padding: 1em 0em;
-  }
-  
-  .credits a {
-    color: #c2770e;
-  }
-  
-  .credits a:hover {
-    text-decoration: none;
-    color: #c2770e;
-  }
-  
-  .footbar {
-    display: flex;
-    align-items: center;
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .openingText {
+    width: 90%;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
+  }
+
+  .socialText {
+    width: 60%;
+  }
+
+  #text {
+    width: 90%;
+  }
+
+  .opening p {
+    padding: 2% 0% 5% 0%;
+  }
+
+  .container {
+    width: 1.90463em;
+    height: 2.07025em;
   }
   
-  @media screen and (max-width: 1550px) {
-  
-    .section h2 {
-     font-size: 1.5em;
-    }
-  
-    .section h2 span {
-      font-size: 2em;
-    }
-  
-    .socials h2 {
-      font-size: 1.5em;
-     }
-   
-     .socials h2 span {
-       font-size: 2em;
-     }
-  
-    .container {
-      width: 2.093em;
-      height: 2.275em;
-    }
-    
-    .icons {
-      font-size: 3.15em;
-      gap: 0.5em;
-    }
+  .icons {
+    font-size: 2.205em;
+    gap: 0.5em;
+  }
 
-    .width {
-        width: 50%;
-    }
+  .height {
+  width: 50vw;
+  }
 
-    h1 {
-        font-size: 4.5em;
-    }
-    
-    .divider {
-        font-size: 1.7em;
-    }
-  
+  .width {
+      width: 70%;
+  }
+
+  h1 {
+      font-size: 3.5em;
   }
   
-  
-  @media screen and (max-width: 1234px) {
-  
-    .socialsSection {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      gap: 2em;
-    }
-  
-    .socials {
-      padding: 7em 0em;
-    }
-  
-    .logoSVG {
-      background-size: 36.4%;
-    }
-    
-    .logo svg {
-      width: 31.5%;
-      padding: 6% 3% 0% 3%;
-    }
-  
-    .logoBrand {
-      font-size: 1.5em;
-    }
-    
-    .logoComp {
-      font-size: 0.65em;
-      gap: 2em;
-    }
-  
-    .socialText {
-      width: 40%;
-    }
-    
-    .width {
-        width: 60%;
-    }
-
-    h1 {
-        font-size: 4.5em;
-    }
-    
-    .divider {
-        font-size: 1.7em;
-    }
-  
-  }
-  
-  @media screen and (max-width: 1024px) {
-  
-    .opening {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-top: 6em;
-      width: 100%;
-    }
-  
-    .openingText {
-      display: flex;
-      width: 70%;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-  
-    .openingText p {
-      font-size: 0.9em;
-    }
-  
-    .openingText h1 {
-      font-size: 2em;
-      text-align: center;
-    }
-  
-    .openingText h1 span {
-      font-size: 1.5em;
-    }
-  
-    .opening img {
-      display: none;
-    }
-  
-    .opening p {
-      padding: 2% 0% 3% 0%;
-    }
-  
-    .mobile-container {
-      display: block;
-    }
-  
-    #navbar {
-      display: none;
-    }
-  
-    .section {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      padding-bottom: 2em;
-    }
-  
-    #text h2 {
-      text-align: center;
-    }
-  
-    #text {
-      align-items: center;
-      width: 70%;
-    }
-  
-    #text p {
-      font-size: 0.9em;
-    }
-  
-    .left {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
-  
-    .socials {
-      padding: 6em 0em;
-    }
-  
-    .socials h2 {
-      text-align: center;
-    }
-  
-    .socialsSection {
-      width: 100%;
-      gap: 2em;
-    }
-  
-    .socialText {
-      gap: 1.5em;
-      width: 70%;
-    }
-  
-    .socialText p {
-      font-size: 0.9em;
-    }
-  
-    .footnav {
-      display: flex;
-      gap: 1em;
-      width: 100%;
-      padding: 4.5em 0em 2em 0em;
-      justify-content: center;
+  .divider {
       font-size: 1.3em;
-    }
+  }
 
-    .width {
-        width: 65%;
-    }
+}
 
-    h1 {
-        font-size: 4.5em;
-    }
-    
-    .divider {
-        font-size: 1.7em;
-    }
-  
+@media screen and (max-width: 611px) {
+  .computer {
+    display: none;
   }
   
-  @media screen and (max-width: 750px) {
-  
-    .openingText {
-      width: 90%;
-      justify-content: center;
-      flex-direction: column;
-    }
-  
-    .socialText {
-      width: 90%;
-    }
-  
-    #text {
-      width: 90%;
-    }
-  
-    .opening p {
-      padding: 2% 0% 5% 0%;
-    }
-  
-    .container {
-      width: 1.90463em;
-      height: 2.07025em;
-    }
-    
-    .icons {
-      font-size: 2.205em;
-      gap: 0.5em;
-    }
-  
-    .height {
-    width: 50vw;
-    }
+  .mobile {
+    display: block;
+  }
 
-    .width {
-        width: 70%;
-    }
+  .socials h2 span {
+    font-size: 1.5em;
+  }
 
-    h1 {
-        font-size: 3.5em;
-    }
-    
-    .divider {
-        font-size: 1.3em;
-    }
-  
+  .socials h2 span.mobile-span {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+      float: none;
+      display: block;
+  }
+
+  .width {
+      width: 85%;
+  }
+
+  h1 {
+      font-size: 3em;
   }
   
-  @media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-    }
-
-    .width {
-        width: 85%;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-    
-    .divider {
-        font-size: 1.1em;
-    }
+  .divider {
+      font-size: 1.1em;
   }
-  
-  @media screen and (max-width: 450px) {
-  
-    .height {
-    width: 90vw;
-    }
+
+  .socialText {
+    width: 80%;
   }
-  
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .height {
+  width: 90vw;
+  }
+}
