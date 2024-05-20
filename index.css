@@ -524,6 +524,18 @@ footer p {
     gap: 0.5em;
   }
 
+  #text p {
+    font-size: 0.9em;
+  }
+
+  #text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0em 2em;
+  }
+
 }
 
 
@@ -563,7 +575,6 @@ footer p {
   .socialText {
     width: 40%;
   }
-
 
 }
 
@@ -630,10 +641,6 @@ footer p {
   #text {
     align-items: center;
     width: 70%;
-  }
-
-  #text p {
-    font-size: 0.9em;
   }
 
   .left {
