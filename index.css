@@ -278,6 +278,10 @@ h1 span {
   justify-content: center;
   align-items: start;
   flex-direction: column;
+  width: 100%;
+}
+
+.description {
   width: 90%;
 }
 
@@ -648,6 +652,10 @@ footer p {
   #text {
     align-items: center;
     width: 70%;
+  }
+
+  .description {
+    width: 100%;
   }
 
   .left {
