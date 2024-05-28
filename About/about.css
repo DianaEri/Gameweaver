@@ -1,320 +1,334 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../Media/seamless_mini_b_619d7ee4-d17f-48a2-891b-e32efb65e92c.png");
-    background-size: 40%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../Media/seamless_mini_b_619d7ee4-d17f-48a2-891b-e32efb65e92c.png");
+  background-size: 40%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {
-    font-family: 'TUIVEN Trial';
-    src: url('../Media/TUIVEN-Trial.ttf');
+  font-family: 'TUIVEN Trial';
+  src: url('../Media/TUIVEN-Trial.ttf');
 }
 
-#pirata-one-regular {
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
+.pirata-one-regular {
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
 }
 
 #navbar {
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-    z-index: 1;
-    box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
 }
 
 .navContainer {
-    display: flex;
-    font-size: 28px;
-    gap: 1.5em;
-    /* padding: 2em 3em 0em 3em;  */
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  font-size: 28px;
+  gap: 1.5em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #home svg {
-    fill: #FFF;
-    height: 1.5em;
+  fill: #FFF;
+  height: 1.5em;
 }
 
 .active {
-    background-color: #000;
-    padding: 1.8em 0.7em 0.5em 0.7em;
-    margin-top: 0;
+  background-color: #000;
+  padding: 1.8em 0.7em 0.5em 0.7em;
+  margin-top: 0;
 }
 
 .navbar-pages a, .navbar-socials a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navbar-pages {
-    align-items: center;
-    margin-left: auto;
-    display: flex;
-    gap: 1.5em;
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  gap: 1.5em;
 }
 
 .navbar-socials {
-    align-items: center;
-    display: flex;
-    gap: 0.5em;
+  align-items: center;
+  display: flex;
+  gap: 0.5em;
 }
 
 .navContainer a:hover {
-    color: #F1A438;
+  color: #F1A438;
 }
 
 #home svg:hover {
-    fill: #F1A438;
+  fill: #F1A438;
 }
 
 .mobile-container {
-    width: 100%;
-    margin: auto;
-    background-color: #555;
-    color: white;
-    border-radius: 10px;
-    display: none;
-    position: fixed;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 1;
+  width: 100%;
+  margin: auto;
+  background-color: #555;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1;
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
 .topnav #myLinks {
-    display: none;
+  display: none;
 }
 
 .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  display: block;
 }
 
 .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .topnav a svg {
-    height: 0.8em;
-    fill: #FFF;
+  height: 0.8em;
+  fill: #FFF;
 }
 
 .topnav a:hover svg {
-    fill:#F1A438;
+  fill:#F1A438;
 }
 
 .topnav a:hover {
-    color: #F1A438;
+  color: #F1A438;
 }
 
 .activated {
-    background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
 }
 
 .container:hover, .container :hover img {
-    opacity: 1;
-    filter: drop-shadow(2px 2px 4px #F1A438);
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
 .active svg {
-    height: 4em;
-    fill: #FFF;
+  height: 4em;
+  fill: #FFF;
 }
 
 .active svg:hover {
-    fill:#F1A438;
+  fill:#F1A438;
 }
 
 .active img {
-    height: 6em;
+  height: 6em;
 }
 
 h1 {
-    color: white;
-    font-size: 3em;
-    text-transform: uppercase;
-    text-align: center;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1 span {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .opening {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4vh;
-    margin-bottom: 5em;
-    gap: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+  margin-bottom: 5em;
+  gap: 3em;
 }
 
 .rowOne, .rowThree {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
 }
 
 .rowTwo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .aboutBox {
-    flex: 50%;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    width: 100%;
+  flex: 50%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
 }
 
 .content {
-    width: 23em;
+  width: 23em;
 }
 
 .content h2, .content h3 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .openingHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    background-image: url("../Media/office.jpg");
-    background-size: 1920px;
-    padding-top: 20em;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  background-image: url("../Media/office.jpg");
+  background-size: 1920px;
+  padding-top: 20em;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
 }
 
 .socials h2 {
-    text-transform: uppercase;
-    font-size: 42px;
-    text-align: start;
+  text-transform: uppercase;
+  font-size: 42px;
+  text-align: start;
 }
 
 .socials h2 span {
-    font-size: 1.5em;
-    line-height: 80%;
+  font-size: 1.5em;
+  line-height: 80%;
 }
   
 
 .width {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 2em;
 }
 
 .headerRow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1em;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
 }
 
 .lineDivider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1em;
 }
 
 .headerAbout {
-    height: 1.6em;
+  height: 1.6em;
 }
 
 
 .divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5vw;
-    color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  color: #fff;
 } 
 
 .opening ul {
-    list-style-image: url('../Media/diamond.svg');
-    color: #FFF;
-    font-size: 1.3em;
+  list-style-image: url('../Media/diamond.svg');
+  color: #FFF;
+  font-size: 1.3em;
 }
 
 .opening ul li {
-    margin: 0.7em 0;
+  margin: 0.7em 0;
 }
 
 body h2 i {
-    color: #c2770e;
+  color: #c2770e;
 } 
 
-h2 {
-    text-transform: uppercase;
-    font-size: 3em;
-    color: #FFF;
-    text-align: center;
+.computer h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #FFF;
+}
+
+.mobile h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
 }
   
-h2 span {
-    font-size: 1.5em;
-    line-height: 80%;
+.computer h2 span {
+  font-size: 1.5em;
+  line-height: 80%;
 }
 
-h3 {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
+.opening h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
+  line-height: 1.2cap;
 }
 
-h4 {
-    margin-top: 3em;
-    color: #c2770e;
-    font-size: larger;
+.opening h2 span {
+  text-transform: uppercase;
+  font-size: 0.67em;
+  color: #fff;
+  text-align: center;
+}
+
+.section h2 {
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #FFF;
+  text-align: center;
 }
 
 .opening p {
-    color: white;
-    font-size: large;
+  color: white;
+  font-size: large;
 }
 
 .aboutParagraph {
@@ -338,30 +352,30 @@ h4 {
 }
 
 .section p {
-    font-size: large;
+  font-size: large;
 }
 
 .button {
-    background-color: #F1A438;
-    border: none;
-    color: #0B0B10;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    text-transform: uppercase;
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2em;
-    width: max-content;
+  background-color: #F1A438;
+  border: none;
+  color: #0B0B10;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  text-transform: uppercase;
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  width: max-content;
 }
 
 .button:hover {
-    border: #F1A438 3px solid;
-    background-color: #0B0B10;
-    color: #F1A438;
+  border: #F1A438 3px solid;
+  background-color: #0B0B10;
+  color: #F1A438;
 }
 
 #image {
@@ -406,6 +420,16 @@ h4 {
   background-image: url("../Media/Dragon.png");
   /* background-size: 100% auto; */
   background-repeat: no-repeat;
+}
+
+.socials h2 {
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.socials h2 span {
+  font-size: 1.5em;
+  line-height: 80%;
 }
 
 .computer {
@@ -458,7 +482,7 @@ h4 {
   height: 2.5em;
 }
 
-#centered {
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
