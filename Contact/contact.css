@@ -20,195 +20,195 @@ body {
 }
 
 .mobile-container {
-    width: 100%;
-    margin: auto;
-    background-color: #555;
-    color: white;
-    border-radius: 10px;
-    display: none;
-    position: fixed;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 1;
+  width: 100%;
+  margin: auto;
+  background-color: #555;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
+  z-index: 1;
 }
   
 .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
   
 .topnav #myLinks {
-    display: none;
+  display: none;
 }
   
 .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  display: block;
 }
   
 .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
   
 .topnav a svg {
-    height: 0.8em;
-    fill: #FFF;
+  height: 0.8em;
+  fill: #FFF;
 }
   
 .topnav a:hover svg {
-    fill:#F1A438;
+  fill:#F1A438;
 }
   
 .topnav a:hover {
-    color: #F1A438;
+  color: #F1A438;
 }
   
 .activated {
-    background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
 }
 
   
 #navbar {
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-    z-index: 1;
-    box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
 }
   
 .navContainer {
-    display: flex;
-    font-size: 28px;
-    gap: 1.5em;
-    padding: 2em 3em 0em 3em;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  font-size: 28px;
+  gap: 1.5em;
+  padding: 2em 3em 0em 3em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 #home svg {
-    fill: #FFF;
-    height: 1.5em;
+  fill: #FFF;
+  height: 1.5em;
 }
 
 .navbar-pages a, .navbar-socials a {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navbar-pages {
-    margin-left: auto;
-    display: flex;
-    gap: 1.5em;
+  margin-left: auto;
+  display: flex;
+  gap: 1.5em;
 }
 
 .navbar-socials {
-    display: flex;
-    gap: 0.5em;
+  display: flex;
+  gap: 0.5em;
 }
 
 .navContainer a:hover {
-    color: #F1A438;
+  color: #F1A438;
 }
 
 #home svg:hover {
-    fill: #F1A438;
+  fill: #F1A438;
 }
 
 .container:hover, .container :hover img {
-    opacity: 1;
-    filter: drop-shadow(2px 2px 4px #F1A438);
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
 .active {
-    background-color: #000;
-    padding: 1.8em 0.7em 0.5em 0.7em;
-    margin-top: -4%;
+  background-color: #000;
+  padding: 1.8em 0.7em 0.5em 0.7em;
+  margin-top: -4%;
 }
     
 .active svg {
-    height: 4em;
-    fill: #FFF;
+  height: 4em;
+  fill: #FFF;
 }
 
 .active svg:hover {
-    fill:#F1A438;
+  fill:#F1A438;
 }
 
 .active img {
-    height: 6em;
+  height: 6em;
 }
 
 h1 {
-    color: white;
-    font-size: 5.5em;
-    text-transform: uppercase;
+  color: white;
+  font-size: 5.5em;
+  text-transform: uppercase;
 }
 
 h1 span {
-    font-size: 4.5em;
-    line-height: 80%;
+  font-size: 4.5em;
+  line-height: 80%;
 }
 
 .opening {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20vh;
-    margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  margin-bottom: 4em;
 }
 
 .opening h1 {
-    margin-bottom: -0.05em;
+  margin-bottom: -0.05em;
 }
 
 .openingHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 .width {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 2em;
 }
 
 .contactForm {
-    margin-bottom: 3em;
+  margin-bottom: 3em;
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #FFFe;
-    background-color: #080808;
-    border-radius: 4px;
-    color: #FFF;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #FFFe;
+  background-color: #080808;
+  border-radius: 4px;
+  color: #FFF;
 }
 
 input[type=email] {
@@ -223,7 +223,7 @@ input[type=email] {
 }
 
 input[type=text]::placeholder {
-    color: #FFF;
+  color: #FFF;
 }
 
 .container a {
