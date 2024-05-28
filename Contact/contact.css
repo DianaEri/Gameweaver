@@ -10,13 +10,70 @@ body {
 
 @font-face {
   font-family: 'TUIVEN Trial';
-  src: url('../Media/TUIVEN-Trial.ttf');
+  src: url('Media/TUIVEN-Trial.ttf');
 }
 
 .pirata-one-regular {
   font-family: "TUIVEN Trial";
   font-weight: 400;
   font-style: normal;
+}
+
+#navbar {
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: top 0.3s;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
+}
+
+.navContainer {
+  display: flex;
+  font-size: 28px;
+  gap: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#home svg {
+  fill: #FFF;
+  height: 1.5em;
+}
+
+.active {
+  background-color: #000;
+  padding: 1.8em 0.7em 0.5em 0.7em;
+  margin-top: 0;
+}
+
+.navbar-pages a, .navbar-socials a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-pages {
+  align-items: center;
+  margin-left: auto;
+  display: flex;
+  gap: 1.5em;
+}
+
+.navbar-socials {
+  align-items: center;
+  display: flex;
+  gap: 0.5em;
+}
+
+.navContainer a:hover {
+  color: #F1A438;
+}
+
+#home svg:hover {
+  fill: #F1A438;
 }
 
 .mobile-container {
@@ -31,17 +88,17 @@ body {
   transition: top 0.3s;
   z-index: 1;
 }
-  
+
 .topnav {
   overflow: hidden;
   background-color: #333;
   position: relative;
 }
-  
+
 .topnav #myLinks {
   display: none;
 }
-  
+
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -53,7 +110,7 @@ body {
   font-style: normal;
   display: block;
 }
-  
+
 .topnav a.icon {
   background: black;
   display: block;
@@ -61,74 +118,23 @@ body {
   right: 0;
   top: 0;
 }
-  
+
 .topnav a svg {
   height: 0.8em;
   fill: #FFF;
 }
-  
+
 .topnav a:hover svg {
   fill:#F1A438;
 }
-  
+
 .topnav a:hover {
   color: #F1A438;
 }
-  
+
 .activated {
   background-color: #000;
   color: white;
-}
-
-  
-#navbar {
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  transition: top 0.3s;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
-  z-index: 1;
-  box-shadow: inset 0px 100px 30px 0px rgba(0,0,0,0.8);
-}
-  
-.navContainer {
-  display: flex;
-  font-size: 28px;
-  gap: 1.5em;
-  padding: 2em 3em 0em 3em;
-  width: 90%;
-  margin: 0 auto;
-}
-
-#home svg {
-  fill: #FFF;
-  height: 1.5em;
-}
-
-.navbar-pages a, .navbar-socials a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.navbar-pages {
-  margin-left: auto;
-  display: flex;
-  gap: 1.5em;
-}
-
-.navbar-socials {
-  display: flex;
-  gap: 0.5em;
-}
-
-.navContainer a:hover {
-  color: #F1A438;
-}
-
-#home svg:hover {
-  fill: #F1A438;
 }
 
 .container:hover, .container :hover img {
@@ -136,12 +142,6 @@ body {
   filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
-.active {
-  background-color: #000;
-  padding: 1.8em 0.7em 0.5em 0.7em;
-  margin-top: -4%;
-}
-    
 .active svg {
   height: 4em;
   fill: #FFF;
