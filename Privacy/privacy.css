@@ -13,7 +13,7 @@ body {
     src: url('../Media/TUIVEN-Trial.ttf');
 }
 
-#pirata-one-regular {
+.pirata-one-regular {
     font-family: "TUIVEN Trial";
     font-weight: 400;
     font-style: normal;
@@ -240,10 +240,11 @@ h1 span {
     color: #fff;
 }
 
-.section h4 {
+.section .h4 {
     margin-top: 3em;
     color: #c2770e;
     font-size: larger;
+    font-weight: bold;
 }
 
 .socials {
@@ -337,7 +338,7 @@ h2 span {
     height: 2.5em;
 }
 
-#centered {
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -691,7 +692,7 @@ h2 span {
         font-size: 1.3em;
     }
     
-    .section h4 {
+    .section .h4 {
         margin-top: 3em;
     }
 
