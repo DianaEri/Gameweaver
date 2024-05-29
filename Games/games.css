@@ -10,7 +10,7 @@ body {
   
 @font-face {
     font-family: 'TUIVEN Trial';
-    src: url('Media/TUIVEN-Trial.ttf');
+    src: url('../Media/TUIVEN-Trial.ttf');
 }
   
 .pirata-one-regular {
