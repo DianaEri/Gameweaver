@@ -10,7 +10,7 @@ body {
   
 @font-face {
   font-family: 'TUIVEN Trial';
-  src: url('Media/TUIVEN-Trial.ttf');
+  src: url('../Media/TUIVEN-Trial.ttf');
 }
 
 .pirata-one-regular {
@@ -153,317 +153,317 @@ body {
 }
   
 .active img {
-    height: 6em;
+  height: 6em;
 }
   
 h1 {
-    color: white;
-    font-size: 3em;
-    text-transform: uppercase;
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
 }
 
 h1 span {
-    font-size: 4.5em;
-    line-height: 80%;
+  font-size: 4.5em;
+  line-height: 80%;
 }
 
 .opening {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25vh;
-    margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
+  margin-bottom: 4em;
 }
 
 .opening h1 {
-    margin-bottom: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .opening p {
-    color: white;
-    font-size: large;
+  color: white;
+  font-size: large;
 }
 
 .openingHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
 }
 
 .width {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 40%;
-    gap: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  gap: 2em;
 }
 
 .divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    color: #c2770e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #c2770e;
 } 
 
 .opening ul {
-    list-style-image: url('../Media/diamond.svg');
-    color: #FFF;
-    font-size: 1.3em;
+  list-style-image: url('../Media/diamond.svg');
+  color: #FFF;
+  font-size: 1.3em;
 }
 
 .opening ul li {
-    margin: 0.7em 0;
+  margin: 0.7em 0;
 }
 
 .socials h2 {
-    text-transform: uppercase;
-    font-size: 2.5em;
-  }
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
   
 .socials h2 span {
-    font-size: 1.5em;
-    line-height: 80%;
+  font-size: 1.5em;
+  line-height: 80%;
 }
 
 .section h2 {
-    text-transform: uppercase;
-    font-size: 2.5em;
-    color: #fff;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: #fff;
 }
 
 .section h3 {
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  color: #fff;
 }
 
 .section .h4 {
-    margin-top: 3em;
-    color: #c2770e;
-    font-size: larger;
-    font-weight: bold;
+  margin-top: 3em;
+  color: #c2770e;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .socials {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10em 0em;
-    flex-direction: column;
-    color: white;
-    width: 100%;
-    background-image: url("../Media/Dragon.png");
-    background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10em 0em;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  background-image: url("../Media/Dragon.png");
+  background-repeat: no-repeat;
 }
 
 .computer {
-    display: block;
-  }
+  display: block;
+}
   
-  .mobile {
-    display: none;
+.mobile {
+  display: none;
 }
 
 .socialsImage {
-    width: 100%;
+  width: 100%;
 }
 
 .container a {
-    color: #FFF;
+  color: #FFF;
 }
 
 .socialText h2 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .socials p {
-    color: white;
-    font-size: large;
-    width: 30vw;
-    margin: 0;
-    padding: 0;
+  color: white;
+  font-size: large;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
 }
 
 .socialsSection {
-    display: flex;
-    gap: 8em;
+  display: flex;
+  gap: 8em;
 }
 
 #image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #text {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2em;
 }
 
 #text p {
-    margin-top: -3%;
+  margin-top: -3%;
 }
 
 footer {
-    background-color: white;
-    width: 100%;
+  background-color: white;
+  width: 100%;
 }
 
 footer p {
-    color: #000;
+  color: #000;
 }
 
 h2 span {
-    font-size: 1.5em;
-    line-height: 80%;
+  font-size: 1.5em;
+  line-height: 80%;
 }
 
 .icons {
-    display: flex;
-    font-size: 4.5em;
-    gap: 0.5em;
+  display: flex;
+  font-size: 4.5em;
+  gap: 0.5em;
 }
 
 .container {
-    position: relative;
-    width: 2.3em;
-    height: 2.5em;
+  position: relative;
+  width: 2.3em;
+  height: 2.5em;
 }
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .container img {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .container, a, button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container:hover, .container :hover img {
-    opacity: 1;
-    filter: drop-shadow(2px 2px 4px #F1A438);
+  opacity: 1;
+  filter: drop-shadow(2px 2px 4px #F1A438);
 }
 
 .logoLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-    position: absolute;
-    bottom: -15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 16em;
-    fill: #000;
-    color: #000;
+  position: absolute;
+  bottom: -15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16em;
+  fill: #000;
+  color: #000;
 }
 
 .logoSVG {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../Media/Controller-background.png");
-    background-size: 52%;
-    background-repeat: no-repeat;
-    background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../Media/Controller-background.png");
+  background-size: 52%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo svg {
-    width: 45%;
-    height: auto;
-    fill: #000;
-    padding: 6% 3% 0% 3%;
+  width: 45%;
+  height: auto;
+  fill: #000;
+  padding: 6% 3% 0% 3%;
 }
 
 .logo:hover svg, .logo:hover {
-    fill: #c2770e;
-    color: #c2770e;
-    cursor: pointer;
+  fill: #c2770e;
+  color: #c2770e;
+  cursor: pointer;
 }
 
 .logoBrand {
-    text-transform: uppercase;
-    font-size: 2em;
+  text-transform: uppercase;
+  font-size: 2em;
 }
 
 .logoComp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 0.71em;
-    gap: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.71em;
+  gap: 2.5em;
 }
 
 .footbar a:hover {
-    color: #c2770e;
+  color: #c2770e;
 }
 
 .footnav {
-    display: flex;
-    gap: 1em;
-    width: 100%;
-    padding: 6em 0em 2em 0em;
-    justify-content: center;
-    font-size: 1.3em;
+  display: flex;
+  gap: 1em;
+  width: 100%;
+  padding: 6em 0em 2em 0em;
+  justify-content: center;
+  font-size: 1.3em;
 }
 
 .footnav a {
-    font-family: "TUIVEN Trial";
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    color: #000;
-    text-decoration-line: none;
+  font-family: "TUIVEN Trial";
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration-line: none;
 }
 
 .footnav span {
-    color: #c7c5ca;
+  color: #c7c5ca;
 }
 
 .credits {
-    width: 100%;
-    background-color: #e9e4e0;
-    padding: 1em 0em;
+  width: 100%;
+  background-color: #e9e4e0;
+  padding: 1em 0em;
 }
 
 .credits a {
-    color: #91590b;
-    font-weight: bold;
+  color: #91590b;
+  font-weight: bold;
 }
   
 .credits a:hover {
-    text-decoration: none;
-    color: #91590b;
+  text-decoration: none;
+  color: #91590b;
 }
 
 .footbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -567,12 +567,12 @@ h2 span {
       font-size: 0.9em;
     }
   
-    .openingText h1 {
-      font-size: 2em;
+    .opening h1 {
+      font-size: 2.7em;
       text-align: center;
     }
   
-    .openingText h1 span {
+    .opening h1 span {
       font-size: 1.5em;
     }
   
@@ -641,6 +641,10 @@ h2 span {
         justify-content: center;
         width: 70%;
         gap: 2em;
+    }
+
+    .divider {
+      font-size: 1.8em;
     }
   
   }
